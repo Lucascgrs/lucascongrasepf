@@ -4,11 +4,15 @@
  */
 package com.mycompany.exo1;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
  *
- * @author lucas
+ * @author Lucas Congras
+ * Creation 04/10/2022
+ * TP0
  */
 public class Exo1 {
     
@@ -21,7 +25,7 @@ public class Exo1 {
         System.out.println("Bonjour, quel est votre prenom ?");
         prenom = sc.nextLine();
         
-        System.out.println("Bonjour " + prenom);
+        System.out.println("Au revoir " + prenom);
         
     }
     
