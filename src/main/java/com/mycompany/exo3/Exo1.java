@@ -27,15 +27,20 @@ public class Exo1 {
             
             case 1:
                 rep = operande1 + operande2;
+                break;
             case 2:
-                rep = operande1 - operande2;                
+                rep = operande1 - operande2;          
+                break;
             case 3:
                 rep = operande1 * operande2;
+                break;
             case 4:
                 rep = operande1 /operande2;
+                break;
             case 5:
                 rep = operande1 % operande2;
-            
+                break;
+                
         }
 
         System.out.println("Le resultat est : " + rep);
