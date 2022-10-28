@@ -8,14 +8,14 @@ package com.mycompany.tp2_relation_1_congras_nom2;
  *
  * @author lucas
  */
-public class Voiture {
+public class Voiture {      //classe
     
     String Modele;
     String Marque;
     int PuissanceCV;
     Personne proprietaire;
     
-    public Voiture(String modele, String marque, int puissanceCV){
+    public Voiture(String modele, String marque, int puissanceCV){      // constructeur
         
         Modele = modele;
         Marque = marque;
@@ -24,7 +24,7 @@ public class Voiture {
     }
     
         @Override
-    public String toString(){
+    public String toString(){       // redéfinition de la méthode toStirng
         //return "Voiture de marque " + Marque + " de modele " + Modele + " avec une puissance de " + PuissanceCV + " chevaux !";
         return "/Marque : " + Marque + " /Modele : " + Modele + " /Puissance : " + PuissanceCV + " /Proprietaire : " + proprietaire;
     }
