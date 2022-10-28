@@ -8,14 +8,14 @@ package com.mycompany.tp2_manip_congras_nom2;
  *
  * @author lucas
  */
-public class Moussaka {
-    
+public class Moussaka { //classe moussaka
+
     int nbCalories;
-    
-    public Moussaka(int nbcalories){
-        
+
+    public Moussaka(int nbcalories) {    // constructeur de la classe moussaka
+
         nbCalories = nbcalories;
-        
+
     }
-    
+
 }

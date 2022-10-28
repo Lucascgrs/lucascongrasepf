@@ -8,11 +8,11 @@ package com.mycompany.tp2_manip_congras_nom2;
  *
  * @author lucas
  */
-public class Tartiflette {
+public class Tartiflette {      //classe tartiflette
     
     int nbCalories;
     
-    public Tartiflette(int nbcalories){
+    public Tartiflette(int nbcalories){     //constructeur de la classe Tartiflette
         
         nbCalories = nbcalories;
         
