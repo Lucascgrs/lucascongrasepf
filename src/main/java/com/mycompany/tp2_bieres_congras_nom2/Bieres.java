@@ -13,7 +13,7 @@ public class Bieres {
     
     public static void main(String[] args){
         
-        BouteilleBiere uneBiere = new BouteilleBiere("cuvée des trolls", 7, "Debuisson") ;
+        BouteilleBiere uneBiere = new BouteilleBiere("cuvée des trolls", 7, "Debuisson") ; //on crée une nouvelle instance de BouteilleBiere
         //uneBiere.nom = "Cuvée des trolls";
         //uneBiere.degreAlcool = 7.0 ;
         //uneBiere.lireEtiquette();
@@ -29,7 +29,7 @@ public class Bieres {
         BouteilleBiere b5 = new BouteilleBiere("Shouff", 3, "ccc");
         
         //b3.lireEtiquette();
-        System.out.println(b3.toString());
+        System.out.println(b3.toString());      // on affiche les caractéristiques de la biere b3
         b4.Decapsuler();
         System.out.println(b4.toString());
     }

@@ -8,14 +8,14 @@ package com.mycompany.tp2_bieres_congras_nom2;
  *
  * @author lucas
  */
-public class BouteilleBiere {
+public class BouteilleBiere {   //définition de la classe BouteilleBiere
     
     String nom;
     float degreAlcool;
     String brasserie;
     boolean ouverte;
     
-    public BouteilleBiere(String unNom, float unDegre, String uneBrasserie) {
+    public BouteilleBiere(String unNom, float unDegre, String uneBrasserie) {   //Constructeur de la classe
         nom = unNom;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
@@ -23,10 +23,10 @@ public class BouteilleBiere {
     }
       
     public void lireEtiquette() {
-        System.out.println("Bouteille de " + nom +" (" + degreAlcool + " degres) \nBrasserie : " + brasserie );
+        System.out.println("Bouteille de " + nom +" (" + degreAlcool + " degres) \nBrasserie : " + brasserie ); //affiche les informations de l'étiquette de la biere (méthode)
     }
     
-    public boolean Decapsuler(){
+    public boolean Decapsuler(){    //méthode qui décapsule une bière
         
         if (!ouverte){
             ouverte = true;
@@ -39,7 +39,7 @@ public class BouteilleBiere {
     }
     
     @Override
-    public String toString() {
+    public String toString() {      //redfinition de la méthode toString qui retourne certaines caractéristiques de l'objet
         String chaine_a_retourner;
         chaine_a_retourner = nom + " (" + degreAlcool + " degrés)Ouverte ? ";
         if (ouverte == true ){ chaine_a_retourner += "oui" ;}
