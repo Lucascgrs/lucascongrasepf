@@ -19,12 +19,12 @@ public class Convertisseur {
     }
     
     @Override
-    public String toString(){
+    public String toString(){       //redéfinition de la méthode toString
         return "nombre de conversions : "+ nbConversions;
     }
     
     
-    public double CelciusVersKelvin(double celcius){
+    public double CelciusVersKelvin(double celcius){        //toute les méthodes de conversions déjà vues dans le tp1
         
         double Kelvin = celcius + 273.15;
         
@@ -78,7 +78,7 @@ public class Convertisseur {
     }
     
     
-    public byte selectmode(){
+    public byte selectmode(){       //méthode qui affiche toute les possiblilités de conversions possibles et retourne  le choix de la conversion (ou -300 pour stop)
         
         byte mode = 0;
         Scanner sc;
@@ -104,11 +104,11 @@ public class Convertisseur {
     }
     
     
-    public double convert(){
+    public double convert(){        // Fait la convertion
         
-        byte mode = selectmode();
+        byte mode = selectmode();   // demande à l'utilisateur quel mode de conversion veut il faire
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);    // la température à convertir
         System.out.println("Saisissez une valeur : ");
         double t = sc.nextDouble();
         System.out.println("Vous avez choisi : " + t + "\n");
@@ -117,7 +117,7 @@ public class Convertisseur {
         String output = "";
         double res = 0;
         
-        switch(mode){
+        switch(mode){   //pour chaque mode de conversion, on a une phrase spécifique qui va être construie ainsi qu'une méthode spécifique qui va être utilisée
             
             case 0:
                 return -300;
@@ -155,7 +155,7 @@ public class Convertisseur {
             
         }
         nbConversions ++;
-        return res;
+        return res;     //on retourne le résultat
         //System.out.println("La température de " + t + entry + " correspond à " + res + " " + output);
         
     }

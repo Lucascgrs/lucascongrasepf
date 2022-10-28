@@ -15,12 +15,12 @@ public class main {
     public static void main(String args[]){
         double res = 0;
         
-        Convertisseur C1 = new Convertisseur();
-        while(res != res-300){
+        Convertisseur C1 = new Convertisseur(); //création d'un nouvel objet de la classe Convertisseur
+        while(res != -300){      // boucle qui permet de faire autant de conversions que l'on veut. Le stop correspond à la valeur -300 donc tant que cette conditon n'est pas vérifiée, on continue les conversions
             
-            res = C1.convert();
+            res = C1.convert();     //on fait les conversions avec l'objet C1 de la classe Convertisseur
             System.out.println(C1.toString());
-            System.out.println("Le résultat de la conversion est " + res + "\n");
+            System.out.println("Le résultat de la conversion est " + res + "\n");       //On affiche le résultat de la conversion
             
         }
         
